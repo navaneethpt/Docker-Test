@@ -1,5 +1,4 @@
 FROM maven:3.5.2-jdk-8-alpine
-$(pwd)
 RUN mvn package spring-boot:repackage
 FROM openjdk:8-jdk-alpine
 MAINTAINER baeldung.com
